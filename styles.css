@@ -1,0 +1,84 @@
+/* Magical Theme Base */
+body {
+    background-color: #1a0f05;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
+    font-family: 'Apple Chancery', cursive, serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#parchment-container {
+    background: #f4e4bc;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    width: 90%;
+    max-width: 900px;
+    padding: 40px;
+    border: 20px solid transparent;
+    border-image: url('https://www.transparenttextures.com/patterns/ornamental-border.png') 30 round;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #4b2c20;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+header p {
+    font-style: italic;
+    color: #6d4c41;
+}
+
+/* Button Grid */
+#project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-group {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-group h3 {
+    border-bottom: 2px solid #4b2c20;
+    color: #4b2c20;
+    padding-bottom: 5px;
+}
+
+/* The Map Buttons */
+.map-btn {
+    display: block;
+    background: transparent;
+    border: 1px solid #4b2c20;
+    color: #4b2c20;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.map-btn:hover {
+    background: #4b2c20;
+    color: #f4e4bc;
+    box-shadow: 0 0 15px #d4af37; /* Gold Glow */
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 50px;
+    color: #4b2c20;
+    font-weight: bold;
+    opacity: 0.7;
+}
