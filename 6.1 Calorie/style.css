@@ -1,0 +1,119 @@
+:root {
+  --ghost-white: #e0e0e0;
+  --void-black: #0a0a0a;
+  --blood-red: #660000;
+  --dried-blood: #4a0000;
+  --cold-grey: #2c2c2c;
+  --spirit-blue: #a3bac3;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  background-color: var(--void-black);
+  color: var(--ghost-white);
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                    url('https://www.transparenttextures.com/patterns/dark-leather.png');
+}
+
+h1 {
+  text-align: center;
+  color: var(--blood-red);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 10px black;
+}
+
+.warning {
+  text-align: center;
+  font-style: italic;
+  color: var(--spirit-blue);
+}
+
+.container {
+  width: 90%;
+  max-width: 680px;
+  background-color: var(--cold-grey);
+  padding: 20px;
+  border: 1px solid var(--blood-red);
+  box-shadow: 0 0 20px var(--dried-blood);
+}
+
+h1,
+.container,
+.output {
+  margin: 20px auto;
+}
+
+label,
+legend {
+  font-weight: bold;
+  color: var(--spirit-blue);
+}
+
+fieldset {
+  border: 1px solid var(--dried-blood);
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--dried-blood);
+  border: 1px solid var(--blood-red);
+  color: white;
+  padding: 10px;
+  font-family: inherit;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--blood-red);
+  box-shadow: 0 0 10px red;
+}
+
+input,
+select {
+  min-height: 30px;
+  background-color: #1a1a1a;
+  color: white;
+  border: 1px solid var(--spirit-blue);
+  margin-bottom: 10px;
+}
+
+.output {
+  border: 3px double var(--blood-red);
+  padding: 15px;
+  text-align: center;
+  background-color: #121212;
+}
+
+.hide {
+  display: none;
+}
+
+.output span {
+  font-weight: bold;
+  font-size: 1.5em;
+  display: block;
+}
+
+.surplus {
+  color: #ff4d4d;
+  text-shadow: 0 0 5px red;
+}
+
+.deficit {
+  color: #4dff4d;
+  text-shadow: 0 0 5px green;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--blood-red);
+}
