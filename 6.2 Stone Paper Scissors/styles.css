@@ -1,0 +1,79 @@
+:root {
+  --dark-bg: #1a1a2e;
+  --white: #ffffff;
+  --accent: #e94560;
+  --gold: #f1be32;
+}
+
+body {
+  background-color: var(--dark-bg);
+  text-align: center;
+  color: var(--white);
+  font-family: sans-serif;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+/* Style for the big hands in the middle */
+.battle-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.hand {
+  font-size: 5rem;
+  background: #16213e;
+  padding: 20px;
+  border-radius: 15px;
+  min-width: 120px;
+  border: 3px solid var(--accent);
+}
+
+.vs {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--gold);
+}
+
+/* Style for the choice buttons */
+.hand-btn {
+  cursor: pointer;
+  background: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1.2rem;
+  margin: 10px;
+  transition: transform 0.2s;
+  width: 110px;
+}
+
+.hand-btn:hover {
+  transform: scale(1.1);
+  background-color: var(--gold);
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: none;
+  margin: 20px auto;
+}
+
+#results-msg {
+  font-size: 1.2rem;
+  color: var(--gold);
+}
