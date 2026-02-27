@@ -1,0 +1,59 @@
+body {
+    background-color: #0b0d17;
+    color: #e4d5b7;
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #740001; /* Gryffindor Red */
+    padding: 2rem;
+    background: rgba(26, 26, 26, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ae0001;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #000;
+}
+
+.pensieve {
+    border-top: 1px solid #d3a625; /* Hogwarts Gold */
+    padding-top: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d3a625;
+    background: #222;
+    color: white;
+    width: 250px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #740001;
+    color: #d3a625;
+    border: 1px solid #d3a625;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ae0001;
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    min-height: 1.5em;
+}
