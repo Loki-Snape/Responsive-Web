@@ -1,0 +1,163 @@
+:root {
+  /* Hogwarts & House Color Palette */
+  --gray-00: #ffffff;
+  --gray-05: #f8e1b5; /* Parchment cream */
+  --gray-15: #d3a625; /* Hogwarts gold */
+  --gray-75: #8c0004; /* Lighter crimson */
+  --gray-85: #3c0000; /* Deep Gryffindor red (Body BG) */
+  --gray-90: #1a0000; /* Dark ink/black */
+  --blue-50: #85c2d1; /* Patronus blue for focus rings */
+  --error: #000000;
+  --danger-color: #c0c0c0; /* Slytherin silver */
+  --danger-background: #1a472a; /* Slytherin green */
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Luminari", "Georgia", "Times New Roman", serif;
+  font-size: 18px;
+  background-color: var(--gray-85);
+  color: var(--gray-05);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 30px auto;
+  color: var(--gray-15);
+  text-shadow: 2px 2px 4px var(--gray-90);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: var(--gray-15);
+}
+
+form {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+fieldset {
+  border: 0 none;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+fieldset div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bracket,
+.comma {
+  font-size: 2.3em;
+  color: var(--gray-15);
+}
+
+form .comma {
+  margin-left: 2px;
+}
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  height: 38px;
+  width: 50px;
+  text-align: center;
+  background-color: var(--gray-05);
+  color: var(--gray-90);
+  border: 2px solid var(--gray-15);
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 15px;
+  text-decoration: none;
+  background-image: linear-gradient(#d3a625, #9e7c1c);
+  border: 3px solid #f8e1b5;
+  color: var(--gray-90);
+  padding: 10px 16px;
+  font-size: 23px;
+  width: 100%;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-image: linear-gradient(#e5b736, #b89223);
+  box-shadow: 0 0 10px var(--gray-15);
+}
+
+select:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--blue-50);
+}
+
+.output-container {
+  width: 95%;
+  min-height: 55px;
+  margin-top: 25px;
+  border-radius: 8px;
+  padding: 15px;
+  overflow-wrap: break-word;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--gray-15);
+  box-shadow: 0 0 15px rgba(211, 166, 37, 0.2);
+}
+
+.output-array {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.output-value {
+  font-size: 2em;
+  text-shadow: 0 0 5px rgba(211, 166, 37, 0.5);
+}
+
+.alert {
+  background-color: var(--danger-background);
+  border: 3px solid var(--danger-color);
+  color: var(--danger-color);
+  font-style: italic;
+}
+
+@media (min-width: 550px) {
+  form,
+  .output-container {
+    max-width: 480px;
+  }
+
+  fieldset {
+    max-width: 400px;
+  }
+
+  .output-array {
+    max-width: 420px;
+  }
+}
