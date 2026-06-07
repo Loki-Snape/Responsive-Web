@@ -7,18 +7,21 @@
 }
 
 :root {
-  --dark-grey: #1b1b32;
-  --light-grey: #f5f6f7;
-  --golden-yellow: #fecc4c;
-  --yellow: #ffcc4c;
-  --gold: #feac32;
-  --orange: #ffac33;
-  --dark-orange: #f89808;
+  /* Hogwarts & Gryffindor inspired palette */
+  --magic-dark: #110e15;       /* Deep night sky / cloak */
+  --parchment: #f0e6d2;        /* Old paper */
+  --burgundy: #740001;         /* Gryffindor primary red */
+  --dark-burgundy: #5c0001;    /* Deep shadows */
+  --gold: #d3a625;             /* Hogwarts metallic gold */
+  --light-gold: #eeba30;       /* Bright gold for highlights */
 }
 
 body {
-  background-color: var(--dark-grey);
-  color: var(--light-grey);
+  background-color: var(--magic-dark);
+  background-image: radial-gradient(circle at center, #1e1826 0%, var(--magic-dark) 100%);
+  color: var(--parchment);
+  /* Using serif fonts common in HP branding */
+  font-family: 'Cinzel', 'Garamond', 'Times New Roman', serif; 
 }
 
 body,
@@ -26,8 +29,17 @@ body,
   text-align: center;
 }
 
-textarea {
+textarea, 
+#message-input {
   max-width: 90%;
+  background-color: var(--parchment);
+  color: var(--magic-dark);
+  border: 2px solid var(--gold);
+  border-radius: 4px;
+  /* Monospace to simulate a typewriter or spellbook entries */
+  font-family: 'Courier New', Courier, monospace; 
+  padding: 12px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .main-text {
@@ -35,18 +47,25 @@ textarea {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .description {
   margin-top: 15px;
   font-size: 1.4rem;
+  font-style: italic;
+  color: #d1c8b8;
 }
 
 .message-label {
   display: block;
   margin-bottom: 20px;
   font-size: 1.5rem;
+  color: var(--light-gold);
 }
 
 #message-input:placeholder-shown,
@@ -57,24 +76,40 @@ textarea {
 .btn {
   display: block;
   cursor: pointer;
-  width: 200px;
-  margin: 10px auto;
-  color: var(--dark-grey);
-  background-color: var(--gold);
-  background-image: linear-gradient(var(--golden-yellow), var(--orange));
-  border-color: var(--gold);
-  border-width: 3px;
+  width: 220px;
+  margin: 20px auto;
+  padding: 10px;
+  color: var(--parchment);
+  background-color: var(--burgundy);
+  background-image: linear-gradient(to bottom, var(--burgundy), var(--dark-burgundy));
+  border: 2px solid var(--gold);
+  border-radius: 6px;
+  font-family: 'Cinzel', 'Garamond', 'Times New Roman', serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-image: linear-gradient(var(--yellow), var(--dark-orange));
+  background-image: linear-gradient(to bottom, var(--dark-burgundy), var(--burgundy));
+  color: var(--light-gold);
+  border-color: var(--light-gold);
+  /* Magical glowing effect on hover */
+  box-shadow: 0 0 15px rgba(211, 166, 37, 0.6); 
 }
 
 #result {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 20px 0;
+  color: var(--light-gold);
+  text-shadow: 0 0 12px rgba(238, 186, 48, 0.4);
 }
 
 .footer {
-  margin-top: 10px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #777;
 }
