@@ -1,43 +1,74 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  /* Classic, magical serif font */
+  font-family: 'Times New Roman', Georgia, serif; 
+  /* Dark, starry night sky gradient */
+  background: linear-gradient(135deg, #0F172A 0%, #000000 100%); 
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 .container {
-  background: #fff;
-  padding: 20px 30px;
+  /* Radial gradient to mimic old, aged parchment */
+  background: radial-gradient(circle, #fdf6e3, #e9d5a1);
+  padding: 30px 40px;
+  /* Thick double border in a bronze/gold tone */
+  border: 4px double #b08d57; 
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8), inset 0 0 15px rgba(139, 69, 19, 0.15);
   text-align: center;
 }
 
 input {
-  padding: 8px;
-  margin: 10px 0;
+  font-family: 'Times New Roman', Georgia, serif;
+  padding: 10px;
+  margin: 15px 0;
   width: 100%;
-  border: 1px solid #ccc;
+  /* Slightly off-white paper look */
+  background: #fdfaf3; 
+  border: 1px solid #b08d57;
   border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  /* Gryffindor red glow on focus */
+  border-color: #740001; 
+  box-shadow: 0 0 5px rgba(116, 0, 1, 0.4);
 }
 
 button {
-  padding: 10px 15px;
-  background: #007bff;
-  color: #fff;
-  border: none;
+  font-family: 'Times New Roman', Georgia, serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 12px 20px;
+  /* Gryffindor Red */
+  background: #740001; 
+  /* Gryffindor Gold */
+  color: #d3a625; 
+  border: 2px solid #d3a625;
   border-radius: 4px;
   cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background: #0056b3;
+  /* Darker red on hover */
+  background: #5c0001; 
+  /* Magical gold glow */
+  box-shadow: 0 0 10px rgba(211, 166, 37, 0.5); 
 }
 
 .result {
-  margin-top: 15px;
+  margin-top: 20px;
   font-weight: bold;
-  color: #333;
+  font-style: italic;
+  /* Dark ink color */
+  color: #1a1a1a; 
+  text-shadow: 1px 1px 2px rgba(211, 166, 37, 0.3);
 }
