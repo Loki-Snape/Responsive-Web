@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital@0;1&display=swap');
+
+body {
+  margin: 0;
+  /* Deep magical gradient simulating a dimly lit Hogwarts corridor */
+  background-color: #0d050c; 
+  background-image: radial-gradient(circle, #2a1124 0%, #0d050c 100%); 
+  text-align: center;
+  color: #d3a625; /* Classic Hogwarts Gold */
+  font-family: 'Playfair Display', serif; /* Old spellbook feel */
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  background-color: #740001; /* Gryffindor Red */
+  border: 2px solid #d3a625; /* Gold border */
+  border-radius: 4px;
+  color: #d3a625;
+  font-family: 'Cinzel', serif; /* Cinematic lettering */
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #5c0001;
+  box-shadow: 0 0 12px #d3a625; /* Lumos glow effect on hover */
+}
+
+input {
+  background-color: #f4ecdf; /* Aged parchment */
+  color: #2c1e16; /* Dark ink brown */
+  border: 2px solid #a98d42;
+  border-radius: 2px;
+  padding: 6px 10px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic; /* Mimics handwriting */
+}
+
+input:focus {
+  outline: none;
+  border-color: #d3a625;
+  box-shadow: 0 0 8px rgba(211, 166, 37, 0.5);
+}
+
+.bold {
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Cinzel', serif;
+  /* Magical glowing text effect */
+  text-shadow: 0 0 5px #ffffff, 0 0 15px #d3a625; 
+}
