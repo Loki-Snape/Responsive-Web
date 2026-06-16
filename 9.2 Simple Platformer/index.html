@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Potter: Journey to Hogwarts</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="start-screen">
+      <h1 class="main-title">Journey to Hogwarts</h1>
+      <p class="instructions">
+        Help Harry catch the Golden Snitches to navigate the castle.
+      </p>
+      <p class="instructions">
+        Use the keyboard arrows to move.
+      </p>
+      <p class="instructions">Press spacebar to jump (and double-jump in mid-air!).</p>
+
+      <div class="btn-container">
+        <button class="btn" id="start-btn">Mount Broom</button>
+      </div>
+    </div>
+
+    <div class="checkpoint-screen">
+      <h2>Ten Points to Gryffindor!</h2>
+      <p>You caught the final Snitch!</p>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
