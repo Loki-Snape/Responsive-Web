@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Cash Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Cash Register</h1>
+      <p>INR Denomination Calculator</p>
+    </header>
+
+    <div class="input-group">
+      <label for="bill-amount">Bill Amount (₹)</label>
+      <input type="number" id="bill-amount" placeholder="Enter bill amount" min="0">
+    </div>
+
+    <div class="input-group">
+      <label for="cash-given">Cash Given (₹)</label>
+      <input type="number" id="cash-given" placeholder="Enter cash given" min="0">
+    </div>
+
+    <button id="calculate-btn">Calculate Return</button>
+
+    <div id="error-message" class="error hidden"></div>
+
+    <div id="output-section" class="output hidden">
+      <h2>Change to Return: <span id="total-return" class="highlight">₹0</span></h2>
+      <div class="notes-grid" id="notes-grid">
+        </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
