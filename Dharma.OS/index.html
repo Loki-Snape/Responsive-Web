@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DHARMA Initiative Logs</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    
+    <div id="terminal-screen" class="terminal-container">
+      <div class="terminal-content">
+        <p>DHARMA INITIATIVE SWAN STATION COMPUTER</p>
+        <p>SYSTEM INITIALIZED.</p>
+        <br />
+        <p>ENTER SEQUENCE:</p>
+        <div class="input-line">
+          <span class="prompt">&gt;</span>
+          <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" autofocus />
+        </div>
+      </div>
+    </div>
+
+    <div id="dashboard-container" class="hidden">
+      <header>
+        <nav>
+          <img
+            class="dharma-logo"
+            src="https://smallimg.pngkey.com/png/small/133-1334498_dharma-initiative-dharma-initiative-logo-png.png"
+            alt="DHARMA Initiative logo"
+          />
+        </nav>
+        <h1 class="title">Station Incident Logs</h1>
+      </header>
+      <main>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th id="topics">Incident Report</th>
+                <th id="avatars">Personnel involved</th>
+                <th id="replies">Updates</th>
+                <th id="views">Clearance Level</th>
+                <th id="activity">Time Logged</th>
+              </tr>
+            </thead>
+            <tbody id="posts-container"></tbody>
+          </table>
+        </div>
+
+        <div class="personnel-wrapper">
+          <h2 class="section-title">Personnel Roster</h2>
+          <div id="personnel-container" class="personnel-grid"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #1a1c19; 
+  --black: #000;
+  --dark-navy: #090a09; 
+  --dark-grey: #687063;
+  --medium-grey: #aebdb5;
+  --light-grey: #e9ece4;
+  
+  /* Dharma Station Colors */
+  --swan: #e2e8f0;
+  --pearl: #e9d5ff;
+  --hydra: #bae6fd;
+  --orchid: #bbf7d0;
+  --arrow: #fef08a;
+  --staff: #fecaca;
+  --looking-glass: #99f6e4;
+  --flame: #fed7aa;
+
+  /* Terminal Colors */
+  --terminal-green: #4af626;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Courier New", Courier, monospace; 
+}
+
+/* --- Terminal Lock Screen Styles --- */
+.terminal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: var(--terminal-green);
+  z-index: 1000;
+  display: flex;
+  padding: 40px;
+  cursor: text;
+}
+
+.terminal-content {
+  width: 100%;
+}
+
+.terminal-content p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.prompt {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+#terminal-input {
+  background: transparent;
+  border: none;
+  color: var(--terminal-green);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+  outline: none;
+}
+
+.hidden {
+  display: none !important;
+}
+/* ---------------------------------- */
+
+nav {
+  background-color: var(--dark-navy);
+  padding: 15px 0;
+  border-bottom: 2px solid var(--dark-grey);
+}
+
+.dharma-logo {
+  width: 150px;
+  display: block;
+  margin: auto;
+  filter: invert(1);
+}
+
+.title {
+  margin: 30px 0;
+  text-align: center;
+  color: var(--light-grey);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.table-wrapper {
+  padding: 0 25px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  color: var(--dark-grey);
+  margin: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+#topics {
+  text-align: start;
+  width: 55%;
+}
+
+th {
+  border-bottom: 2px solid var(--dark-grey);
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--light-grey);
+}
+
+td:not(:first-child) {
+  text-align: center;
+}
+
+td {
+  border-bottom: 1px dashed var(--dark-grey);
+  padding: 20px 0;
+}
+
+.post-title {
+  font-size: 1.2rem;
+  color: var(--medium-grey);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post-title:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.category {
+  padding: 4px 8px;
+  color: var(--black);
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 10px 0 10px;
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.swan { background-color: var(--swan); }
+.pearl { background-color: var(--pearl); }
+.hydra { background-color: var(--hydra); }
+.orchid { background-color: var(--orchid); }
+.arrow { background-color: var(--arrow); }
+.staff { background-color: var(--staff); }
+.looking-glass { background-color: var(--looking-glass); }
+.flame { background-color: var(--flame); }
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.avatar-container img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid var(--dark-grey);
+}
+
+/* --- NEW: Personnel Section Styles --- */
+.section-title {
+  color: var(--light-grey);
+  margin: 60px 0 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  border-top: 1px dashed var(--dark-grey);
+  padding-top: 30px;
+}
+
+.personnel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 0 25px 60px;
+}
+
+.personnel-card {
+  background-color: var(--dark-navy);
+  border: 1px solid var(--dark-grey);
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 4px;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.personnel-card:hover {
+  border-color: var(--light-grey);
+  transform: translateY(-2px);
+}
+
+.personnel-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid var(--dark-grey);
+}
+
+.personnel-name {
+  color: var(--light-grey);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.personnel-id {
+  color: var(--medium-grey);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 750px) {
+  .table-wrapper {
+    padding: 0 15px;
+  }
+  th {
+    font-size: 1.1rem;
+  }
+  .post-title {
+    font-size: 1.1rem;
+  }
+  .personnel-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    padding: 0 15px 40px;
+  }
+}
