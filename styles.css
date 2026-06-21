@@ -1,4 +1,3 @@
-/* Magical Theme Base */
 body {
     background-color: #1a0f05;
     background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
@@ -14,7 +13,7 @@ body {
     background: #f4e4bc;
     background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
     width: 90%;
-    max-width: 900px;
+    max-width: 1200px;
     padding: 40px;
     border: 20px solid transparent;
     border-image: url('https://www.transparenttextures.com/patterns/ornamental-border.png') 30 round;
@@ -34,7 +33,6 @@ header p {
     color: #6d4c41;
 }
 
-/* Button Grid */
 #project-grid {
     display: flex;
     flex-wrap: wrap;
@@ -56,7 +54,6 @@ header p {
     padding-bottom: 5px;
 }
 
-/* The Map Buttons */
 .map-btn {
     display: block;
     background: transparent;
@@ -72,7 +69,7 @@ header p {
 .map-btn:hover {
     background: #4b2c20;
     color: #f4e4bc;
-    box-shadow: 0 0 15px #d4af37; /* Gold Glow */
+    box-shadow: 0 0 15px #d4af37;
     transform: scale(1.05);
 }
 
