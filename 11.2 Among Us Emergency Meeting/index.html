@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Meeting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tablet-container">
+        <h1>EMERGENCY MEETING</h1>
+        
+        <div class="control-panel">
+            <input type="text" id="voter-id" placeholder="Enter your Crewmate ID...">
+            <div class="add-suspect">
+                <input type="text" id="new-suspect" placeholder="New suspect color...">
+                <button id="add-btn">Add Suspect</button>
+            </div>
+        </div>
+
+        <div id="voting-buttons" class="grid-container"></div>
+        
+        <div class="action-buttons">
+            <button id="results-btn">Eject (Tally Votes)</button>
+        </div>
+
+        <div id="message-board">System ready. Awaiting inputs.</div>
+        <div id="results-display"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
