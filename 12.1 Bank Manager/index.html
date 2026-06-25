@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringotts Wizarding Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bank-container">
+        <header>
+            <h1>Gringotts Wizarding Bank</h1>
+            <p class="subtitle">Fortius Quo Fidelius</p>
+        </header>
+        
+        <div class="goblin-guards">
+            <div class="goblin-img">
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.Wo5uJLgg-4euAmFjOwr04AHaJp?r=0&cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Goblin Guard 1">
+            </div>
+            <div class="goblin-img">
+                <img src="https://as2.ftcdn.net/v2/jpg/04/84/89/37/1000_F_484893758_Vjk6MnRjFEdouLrIhet1b2gowWkwv0Ke.jpg" alt="Goblin Guard 2">
+            </div>
+        </div>
+
+        <div class="vault-display">
+            <h2>Vault 687</h2>
+            <div id="balance-display">Current Balance: 0 Galleons</div>
+        </div>
+
+        <div class="controls">
+            <input type="number" id="amount-input" placeholder="Amount in Galleons..." min="1">
+            <div class="button-group">
+                <button id="deposit-btn">Deposit</button>
+                <button id="withdraw-btn">Withdraw</button>
+            </div>
+            <div id="message-board">Welcome to Gringotts.</div>
+        </div>
+
+        <div class="ledgers">
+            <div class="ledger">
+                <h3>Deposits</h3>
+                <ul id="deposit-list"></ul>
+            </div>
+            <div class="ledger">
+                <h3>Withdrawals</h3>
+                <ul id="withdrawal-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

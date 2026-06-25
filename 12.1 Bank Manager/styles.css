@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    background-image: linear-gradient(135deg, #050505 0%, #1a1a1a 100%);
+    color: #d4af37;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.bank-container {
+    background-color: #1c1c1c;
+    border: 3px solid #8b7322;
+    border-radius: 5px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.1), inset 0 0 20px rgba(0,0,0,0.8);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #8b7322;
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    margin: 0;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.subtitle {
+    font-style: italic;
+    margin: 5px 0 0 0;
+    color: #a98d2a;
+    font-size: 1.1rem;
+}
+
+.goblin-guards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+.goblin-img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #8b7322;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+
+.goblin-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vault-display {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #111;
+    border: 1px solid #8b7322;
+    border-radius: 3px;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    margin-top: 0;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+#balance-display {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+input {
+    padding: 12px;
+    background-color: #0a0a0a;
+    border: 1px solid #8b7322;
+    color: #d4af37;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    background-color: #8b7322;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #d4af37;
+}
+
+#message-board {
+    text-align: center;
+    font-style: italic;
+    min-height: 24px;
+    color: #e6c25a;
+}
+
+.ledgers {
+    display: flex;
+    gap: 20px;
+}
+
+.ledger {
+    flex: 1;
+    background-color: #111;
+    padding: 15px;
+    border: 1px solid #8b7322;
+    min-height: 150px;
+}
+
+.ledger h3 {
+    margin-top: 0;
+    font-family: 'Cinzel', serif;
+    border-bottom: 1px solid #8b7322;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #5c4d17;
+    text-align: center;
+    font-size: 1.1rem;
+}
