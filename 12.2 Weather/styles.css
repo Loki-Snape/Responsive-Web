@@ -1,0 +1,108 @@
+body {
+    background-color: #2b1b3d;
+    background-image: radial-gradient(circle at center, #3a2453 0%, #110918 100%);
+    color: #d1c4e9;
+    font-family: 'Special Elite', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.tv-container {
+    background-color: #5c4033;
+    border: 15px solid #3e2723;
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8), inset 0 0 20px rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    color: #8bc34a;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px #000;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select, button {
+    font-family: 'Special Elite', monospace;
+    padding: 12px;
+    background-color: #dcedc8;
+    border: 2px solid #1b5e20;
+    color: #1b5e20;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #7b1fa2;
+    color: white;
+    border-color: #4a148c;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #9c27b0;
+}
+
+#weather-display {
+    background-color: #1a1a1a;
+    border: 5px solid #212121;
+    border-radius: 10px;
+    padding: 20px;
+    color: #8bc34a;
+    box-shadow: inset 0 0 15px #000;
+}
+
+.hidden {
+    display: none;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 0 10px #8bc34a);
+}
+
+#location {
+    margin-top: 0;
+    color: #ff5722;
+}
+
+#weather-main {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #dcedc8;
+}
+
+.stats {
+    text-align: left;
+    margin-top: 15px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.stats p {
+    margin: 8px 0;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 5px;
+}
+
+.stats span {
+    color: #ffeb3b;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nowhere Weather Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="tv-container">
+        <h1>Weather in Nowhere</h1>
+        <div class="controls">
+            <select id="city-select">
+                <option value=""></option>
+                <option value="new york">New York</option>
+                <option value="los angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="london">London</option>
+            </select>
+            <button id="get-weather-btn">Fetch Weather</button>
+        </div>
+        
+        <div id="weather-display" class="hidden">
+            <h2 id="location"></h2>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p id="weather-main"></p>
+            
+            <div class="stats">
+                <p>Temp: <span id="main-temperature"></span></p>
+                <p>Feels Like: <span id="feels-like"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind: <span id="wind"></span></p>
+                <p>Gust: <span id="wind-gust"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
